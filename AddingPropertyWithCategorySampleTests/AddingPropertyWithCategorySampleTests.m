@@ -7,6 +7,7 @@
 //
 
 #import "AddingPropertyWithCategorySampleTests.h"
+#import "NSObject+Ext.h"
 
 @implementation AddingPropertyWithCategorySampleTests
 
@@ -24,9 +25,12 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testNSObjectPropertyTest
 {
-    STFail(@"Unit tests are not implemented yet in AddingPropertyWithCategorySampleTests");
+    NSObject *object = [NSObject new];
+    object.test = @"test";
+    
+    STAssertEqualObjects(object.test, @"test", @"object.test must be == \"test\"");
 }
 
 @end
