@@ -24,8 +24,8 @@
 		92F9309916CBA75C00438712 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F9307816CBA75B00438712 /* CoreData.framework */; };
 		92F930A116CBA75C00438712 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92F9309F16CBA75C00438712 /* InfoPlist.strings */; };
 		92F930A416CBA75C00438712 /* AddingPropertyWithCategorySampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F930A316CBA75C00438712 /* AddingPropertyWithCategorySampleTests.m */; };
-		92F930AF16CBA78B00438712 /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F930AE16CBA78B00438712 /* NSObject+Ext.m */; };
-		92F930B016CBA8DD00438712 /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F930AE16CBA78B00438712 /* NSObject+Ext.m */; };
+		92F930B416CBAC9F00438712 /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F930B316CBAC9F00438712 /* NSObject+Ext.m */; };
+		92F930B516CBAC9F00438712 /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F930B316CBAC9F00438712 /* NSObject+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		92F930A016CBA75C00438712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92F930A216CBA75C00438712 /* AddingPropertyWithCategorySampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddingPropertyWithCategorySampleTests.h; sourceTree = "<group>"; };
 		92F930A316CBA75C00438712 /* AddingPropertyWithCategorySampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingPropertyWithCategorySampleTests.m; sourceTree = "<group>"; };
-		92F930AD16CBA78B00438712 /* NSObject+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Ext.h"; sourceTree = "<group>"; };
-		92F930AE16CBA78B00438712 /* NSObject+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Ext.m"; sourceTree = "<group>"; };
+		92F930B216CBAC9F00438712 /* NSObject+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Ext.h"; sourceTree = "<group>"; };
+		92F930B316CBAC9F00438712 /* NSObject+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Ext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,7 @@
 		92F9306316CBA75B00438712 = {
 			isa = PBXGroup;
 			children = (
+				92F930B116CBAC9F00438712 /* Category */,
 				92F9307A16CBA75B00438712 /* AddingPropertyWithCategorySample */,
 				92F9309C16CBA75C00438712 /* AddingPropertyWithCategorySampleTests */,
 				92F9307116CBA75B00438712 /* Frameworks */,
@@ -124,8 +125,6 @@
 		92F9307A16CBA75B00438712 /* AddingPropertyWithCategorySample */ = {
 			isa = PBXGroup;
 			children = (
-				92F930AD16CBA78B00438712 /* NSObject+Ext.h */,
-				92F930AE16CBA78B00438712 /* NSObject+Ext.m */,
 				92F9308316CBA75B00438712 /* AppDelegate.h */,
 				92F9308416CBA75C00438712 /* AppDelegate.m */,
 				92F9308C16CBA75C00438712 /* AddingPropertyWithCategorySample.xcdatamodeld */,
@@ -165,6 +164,15 @@
 				92F9309F16CBA75C00438712 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92F930B116CBAC9F00438712 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				92F930B216CBAC9F00438712 /* NSObject+Ext.h */,
+				92F930B316CBAC9F00438712 /* NSObject+Ext.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +287,7 @@
 				92F9308116CBA75B00438712 /* main.m in Sources */,
 				92F9308516CBA75C00438712 /* AppDelegate.m in Sources */,
 				92F9308E16CBA75C00438712 /* AddingPropertyWithCategorySample.xcdatamodeld in Sources */,
-				92F930AF16CBA78B00438712 /* NSObject+Ext.m in Sources */,
+				92F930B416CBAC9F00438712 /* NSObject+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F930A416CBA75C00438712 /* AddingPropertyWithCategorySampleTests.m in Sources */,
-				92F930B016CBA8DD00438712 /* NSObject+Ext.m in Sources */,
+				92F930B516CBAC9F00438712 /* NSObject+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
